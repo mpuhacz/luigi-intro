@@ -16,6 +16,6 @@ COPY init.sh /init.sh
 COPY names.txt /names.txt
 
 RUN chmod +x /init.sh
-COPY requirements.txt /etc/requirements.txt
+COPY spark_requirements.txt /etc/requirements.txt
 RUN pip install -r /etc/requirements.txt && \
     rm /etc/requirements.txt
